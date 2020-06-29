@@ -1,0 +1,53 @@
+@charset "utf-8";
+@import url(reset.css);
+
+/*wrapper*/
+
+#wrapper{width:100%; height:1280px;position:relative;background:url(../images_sub/login_back.png) repeat-x 50% 0;min-width:1200px}
+
+/*signup_wrap*/
+
+.signup_wrap{width:1100px;margin:0 auto;padding-top:20px;position:relative;color:#fff}
+.signup_wrap h1{text-align:right}
+
+.signup_wrap h2{color:#fff;text-align:center;font-size:50px;font-weight:500;line-height:60px;height:60px;margin-bottom:20px}
+
+.signup_wrap .location{text-align:center;font-size:18px;font-weight:300;height:18px;line-height:18px;margin-bottom:40px}
+
+.signup_wrap .step{width:844px;height:160px;margin:0 auto;background:url(../images_sub/step_line.png) no-repeat 50% 40%;margin-bottom:30px}
+
+.step li{float:left;width:121px;height:160px;box-sizing:border-box;padding-top:110px;text-align:center;font-weight:100;margin-left:120px;font-size:14px}
+
+.step li:first-child{margin:0}
+
+.step li span{display:block;font-size:16px;font-weight:300}
+
+.step li.on{color:#ffff6a}
+
+.step .step01{background:url(../images_sub/step_icon1.png) no-repeat 50% 0}
+.step .step02{background:url(../images_sub/step_icon2.png) no-repeat 50% 0}
+.step .step03{background:url(../images_sub/step_icon_on3.png) no-repeat 50% 8px}
+.step .step04{background:url(../images_sub/step_icon4.png) no-repeat 50% 10px}
+
+.signup_wrap .signup{width:1100px;height:690px;background:url(../images_sub/login_back2.png);padding:50px 70px 0 150px ;box-sizing:border-box}
+
+.signup .tip{color:#d9d9d9;height:14px;line-height:14px;font-weight:300;font-size:14px;margin-bottom:50px}
+form{width:600px}
+form div.fl{margin-right:25px}
+form dt{margin-bottom:10px;font-size:14px;font-weight:300;line-height:16px;height:16px}
+form dd{margin-bottom:40px;font-size:14px;font-weight:300;line-height:24px;height:24px}
+form dd input{padding-left:5px;box-sizing:border-box;height:24px;border:none;width:180px;outline:none}
+form dd input[type="radio"]{width:13px}
+form dd input[type="radio"]+label{margin-right:10px}
+
+form dd span{margin-left:10px;font-size:12px;font-weight:100;color:#d9d9d9}
+form dd select{height:24px}
+
+.userName input,.userMail input{width:130px;margin:0 5px}
+.userPhone input{width:80px;margin:0 5px}
+.userName input,.userMail input:first-child{margin-left:0}
+form .userBirth select,.userPhone select{width:80px;margin-right:5px}
+
+.signup .signup_btn{margin-top:480px;margin-left:100px}
+.signup .signup_btn a{color:#fff;display:block;float:left;width:50px;height:25px;font-size:25px;line-height:25px;margin-left:20px;text-decoration:none}
+.signup .signup_btn a:first-child{color:#ffff6a}

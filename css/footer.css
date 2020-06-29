@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+#footer_wrap{width:100%;position:relative;z-index:1;min-width:1200px}
+.footer_top_wrap{width:100%;height:50px;position:relative;background-color:#272b34;min-width:1200px}
+.footer_bottom_wrap{width:100%;height:120px;position:relative;background-color:#3b414d;min-width:1200px}
+
+.footer_top{width:1193px;height:50px;margin:0 auto;position:relative}
+.footer_top .footer_menu{height:50px;float:left}
+.footer_top .footer_menu li{float:left}
+.footer_top .footer_menu a{color:#fff;font-size:17px;font-weight:300;line-height:50px;padding:0 20px;background:url(../images/usermenu_line.png) no-repeat 0 55%}
+.footer_top .footer_menu li:first-child a{padding-left:0;background:none}
+
+.footer_top .footer_sns{float:left;margin-left:160px}
+.footer_top .footer_sns li{float:left;margin-left:10px;margin-top:10px}
+
+.family_site{width:300px;height:50px;float:right}
+.family_site .family_title{position:relative;height:50px;float:left;color:#fff;text-align:center;width:150px;box-sizing:border-box}
+.family_site .family_title>a{font-size:17px;font-weight:300;line-height:50px;color:#fff;display:block;background:url(../images/arrow_top_W.png) no-repeat 90% 50%;padding-right:20px}
+.family_site .family_title>a{border-left:1px solid #3b414d;border-right:1px solid #3b414d}
+.family_site .family_title:first-child>a{border-right:0}
+
+.family_title .family_list{position:absolute;bottom:50px;left:0;width:150px;background-color:#3b414d;display:none}
+.family_title .family_list.on{display:block}
+
+.family_title .family_list li{border-bottom:1px solid #afb1b5;box-sizing:border-box}
+.family_title .family_list li a{font-size:17px;font-weight:300;line-height:50px;color:#fff;display:block;width:150px;display:block}
+.family_title .family_list li a:hover{background-color:#f34527}
+
+.footer_bottom{width:1193px;height:120px;margin:0 auto;position:relative;padding-top:30px;box-sizing:border-box}
+.footer_bottom .footer_logo{width:83px;height:60px;float:left;margin-right:20px}
+
+.footer_bottom .footer_info{float:left}
+.footer_info address{color:#d9d9d9;font-size:14px;font-weight:100;height:20px;line-height:20px}
+.footer_info .copy{color:#afb1b5;font-size:14px;font-weight:100;margin-top:7px;height:20px;line-height:20px}
+
+.footer_bottom .top_arrow{float:right}
