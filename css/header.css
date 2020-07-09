@@ -2,7 +2,7 @@
 
 #wrapper{width:100%;position:relative;min-width:1200px}
 
-#header_wrap{width:100%;position:relative;background-color:#fff;z-index:1;min-width:1200px}
+#header_wrap{width:100%;position:relative;background-color:#fff;z-index:99;min-width:1200px}
 #header_intro_wrap{width:100%;position:relative;background-color:#0c2245;min-width:1200px}
 
 /*header_intro*/

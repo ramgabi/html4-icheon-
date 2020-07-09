@@ -34,7 +34,8 @@ function init(){
   var srcIcon=document.getElementById('src_icon');
   var srcZone=document.getElementById('src_zone');
   
-  srcIcon.onclick=function(){
+  srcIcon.onclick=function(e){
+    e.preventDefault();
    if(srcZone.className==''){
     srcZone.className='on'
    }else{
@@ -44,8 +45,8 @@ function init(){
   
   var srcBar=srcZone.getElementsByTagName('input')[0];
   
-  srcBar.onclick=function(){
-  
+  srcBar.onclick=function(e){
+    e.preventDefault();
   if(srcBar.value=='검색어를 입력하세요'){
    srcBar.value='';
    return;
@@ -79,7 +80,8 @@ function init(){
    }
   }
   
-  MBBtnPrev.onclick=function(){
+  MBBtnPrev.onclick=function(e){
+    e.preventDefault();
    if(--isnum<0){
     isnum=2;
    }
@@ -88,7 +90,8 @@ function init(){
    clearInterval(MBsi);
   }
   
-  MBBtnNext.onclick=function(){
+  MBBtnNext.onclick=function(e){
+    e.preventDefault();
    if(++isnum>2){
     isnum=0;
    }
@@ -102,7 +105,8 @@ function init(){
    }
    MBBannerRoll(isnum)
   }
-  MBBtnStop.onclick=function(){
+  MBBtnStop.onclick=function(e){
+    e.preventDefault();
    if(MBBtnStop.className=='btn_stop'){
     MBBtnStop.className='btn_play';
     clearInterval(MBsi);
@@ -137,8 +141,8 @@ function init(){
     
     notice[i].num=i;
    // console.log(notice[i])
-    notice[i].onclick=function(){
-     
+    notice[i].onclick=function(e){
+     e.preventDefault();
      if(noticeNum!=this.num){
      this.getElementsByTagName('a')[0].className='on';
      notice[noticeNum].getElementsByTagName('a')[0].className='';
@@ -162,8 +166,8 @@ function init(){
   for(var i=0; i<news.length; i++){
     
     news[i].num=i;
-    news[i].onclick=function(){
-     
+    news[i].onclick=function(e){
+      e.preventDefault();
      if(newsNum!=this.num){
      this.getElementsByTagName('a')[0].className='on';
      news[newsNum].getElementsByTagName('a')[0].className='';
@@ -198,8 +202,8 @@ function init(){
       for(var j=0; j<3; j++){
     
        newsLi[j].num=j;
-       newsLi[j].onclick=function(){
-           
+       newsLi[j].onclick=function(e){
+        e.preventDefault();
         if(newsLiNum!=this.num){
          this.getElementsByTagName('div')[0].className='news_current on';
          newsLi[newsLiNum].getElementsByTagName('div')[0].className='news_current';
@@ -228,20 +232,23 @@ function init(){
      
      bannerRoll=setInterval(animate,3000);
      
-    btnPrev.onclick=function(){
+    btnPrev.onclick=function(e){
+      e.preventDefault();
         var bannerLi=bannerZone.children[5];
         bannerZone.insertBefore(bannerLi,bannerZone.firstChild)
         clearInterval(bannerRoll);
          btnStop.className='btn_play';
          return false;
     }    
-    btnNext.onclick=function(){
+    btnNext.onclick=function(e){
+      e.preventDefault();
         animate();
         clearInterval(bannerRoll);
          btnStop.className='btn_play';
         return false;
     }    
-    btnStop.onclick=function(){
+    btnStop.onclick=function(e){
+      e.preventDefault();
         clearInterval(bannerRoll);
         if(btnStop.className!='btn_stop'){
             btnStop.className='btn_stop';
@@ -258,7 +265,8 @@ function init(){
 				
 				for(var i=0;i<footerLink.length;i++){
 								footerLink[i].num=i
-								footerLink[i].onclick=function(){
+								footerLink[i].onclick=function(e){
+                        e.preventDefault();
 												footerLinkLi=this.getElementsByTagName('ul')[0];
 												if(footerLinkLi.className=="family_list"){
 											footerLinkLi.className="family_list on"

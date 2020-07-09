@@ -34,7 +34,8 @@ function init(){
   var srcIcon=document.getElementById('src_icon');
   var srcZone=document.getElementById('src_zone');
   
-  srcIcon.onclick=function(){
+  srcIcon.onclick=function(e){
+			e.preventDefault();
    if(srcZone.className==''){
     srcZone.className='on'
    }else{
@@ -60,7 +61,8 @@ function init(){
 	for(var i=1;i<snbTitle.length;i++){
 		snbTitle[i].num=i;
 			var snbcurrentNum=1;
-		snbTitle[i].onclick=function(){
+		snbTitle[i].onclick=function(e){
+			e.preventDefault();
 			var snbList=this.getElementsByTagName('ul')[0];
 			if(snbList.className=="snb_list"){
 			snbTitle[snbcurrentNum].getElementsByTagName('ul')[0].className="snb_list";
@@ -69,7 +71,6 @@ function init(){
 			}else{
 				snbList.className="snb_list";
 			}
-			return false;
 		}
 	}
 	
