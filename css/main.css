@@ -41,7 +41,7 @@
 .ceo_menu .greeting{background:url(../images/profile_icon01.png) no-repeat 55px 10px;padding-left:50px}
 .ceo_menu .want{background:url(../images/profile_icon02.png) no-repeat 20px 12px;padding-left:30px}
 
-.visual_aside .weather{width:385px;height:127px;border-color:1px solid #fff;padding:25px 16px;box-sizing:border-box}
+.visual_aside .weather{width:385px;height:127px;padding:25px 16px;box-sizing:border-box}
 .weather .weather_info{float:left;width:80px;height:72px;padding-left:85px;background:url(../images/weather_icon01.png) no-repeat 0 0}
 .weather .weather_info p{font-size:24px;font-weight:300;color:#fff;line-height:40px}
 
